@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { Building2, CalendarClock, CircleDollarSign, ContactRound, Home, Search, TrendingUp } from 'lucide-react'
-import { createClient } from './lib/supabase'
+import { createClient } from '../lib/supabase'
 
 const cards = [
   { label: 'Propiedades activas', value: '0', icon: Home },
