@@ -19,7 +19,6 @@ export default function Dashboard() {
 useEffect(() => {
   const verificarConexion = async () => {
     try {
-      const supabase = createClient()
 
       const { error } = await supabase.auth.getSession()
 
