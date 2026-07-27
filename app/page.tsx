@@ -12,9 +12,11 @@ const cards = [
 ]
 
 export default function Dashboard() {
-  const [status, setStatus] = useState<'checking' | 'ok' | 'error'>('checking')
+  const [status, setStatus] = useState<
+  'checking' | 'connected' | 'error'
+>('checking')
 
-  useEffect(() => {
+useEffect(() => {
   const verificarConexion = async () => {
     try {
       const supabase = createClient()
@@ -35,8 +37,6 @@ export default function Dashboard() {
 
   void verificarConexion()
 }, [])
-
-  return (
     <main>
       <aside className="sidebar">
         <div className="brand"><Building2 size={28}/><div><strong>GD</strong><span>Real Estate Manager</span></div></div>
