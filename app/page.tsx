@@ -37,7 +37,8 @@ useEffect(() => {
 
   void verificarConexion()
 }, [])
-    <main>
+   return (
+     <main>
       <aside className="sidebar">
         <div className="brand"><Building2 size={28}/><div><strong>GD</strong><span>Real Estate Manager</span></div></div>
         <nav>
