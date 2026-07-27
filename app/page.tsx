@@ -15,13 +15,26 @@ export default function Dashboard() {
   const [status, setStatus] = useState<'checking' | 'ok' | 'error'>('checking')
 
   useEffect(() => {
+  const verificarConexion = async () => {
     try {
       const supabase = createClient()
-      supabase.auth.getSession().then(({ error }) => setStatus(error ? 'error' : 'ok'))
-    } catch {
+
+      const { error } = await supabase.auth.getSession()
+
+      if (error) {
+        setStatus('error')
+        return
+      }
+
+      setStatus('connected')
+    } catch (error) {
+      console.error(error)
       setStatus('error')
     }
-  }, [])
+  }
+
+  verificarConexion()
+}, [])
 
   return (
     <main>
