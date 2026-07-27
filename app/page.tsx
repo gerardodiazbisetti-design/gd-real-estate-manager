@@ -33,7 +33,7 @@ export default function Dashboard() {
     }
   }
 
-  verificarConexion()
+  void verificarConexion()
 }, [])
 
   return (
