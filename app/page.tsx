@@ -12,14 +12,13 @@ const cards = [
 ]
 
 export default function Dashboard() {
-  const [status, setStatus] = useState<
+    const [status, setStatus] = useState<
   'checking' | 'connected' | 'error'
 >('checking')
 
 useEffect(() => {
   const verificarConexion = async () => {
     try {
-
       const { error } = await supabase.auth.getSession()
 
       if (error) {
