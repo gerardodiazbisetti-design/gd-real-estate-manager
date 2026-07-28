@@ -38,9 +38,9 @@ useEffect(() => {
    return (
      <main>
       <aside className="sidebar">
-        <div className="brand"><Building2 size={28}/><div><strong>GD</strong><span>Real Estate Manager</span></div></div>
+        <div className="brand"><Building2 size={28}/><strong>GD</strong><span>Real Estate Manager</span></div></div>
         </div>
-        </nav>
+        <nav>
           <a className="active"><TrendingUp size={19}/>Panel principal</a>
           <a><Home size={19}/>Propiedades</a>
           <a><ContactRound size={19}/>Clientes</a>
