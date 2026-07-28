@@ -43,7 +43,7 @@ useEffect(() => {
         <nav>
           <a className="active"><TrendingUp size={19}/>Panel principal</a>
           <a><Home size={19}/>Propiedades</a>
-          <a><ContactRound size={19}/>Clientes</a>
+          <a href="/clientes"><ContactRound size={19}/>Clientes</a>
           <a><Search size={19}/>Búsquedas</a>
           <a><CalendarClock size={19}/>Seguimientos</a>
         </nav>
