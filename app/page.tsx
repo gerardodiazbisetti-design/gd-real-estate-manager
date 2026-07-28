@@ -55,6 +55,7 @@ useEffect(() => {
           <span className={`status ${status}`}>
             {status === 'checking' ? 'Verificando Supabase…' : status === 'ok' ? 'Supabase conectado' : 'Falta conectar Supabase'}
           </span>
+          </div>
         </header>
 
         <div className="cards">
