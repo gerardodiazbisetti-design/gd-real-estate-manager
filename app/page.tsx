@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useEffect, useState } from 'react'
 import { Building2, CalendarClock, CircleDollarSign, ContactRound, Home, Search, TrendingUp } from 'lucide-react'
