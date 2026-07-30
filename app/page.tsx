@@ -53,7 +53,7 @@ useEffect(() => {
         <header>
           <div><p className="eyebrow">CRM INMOBILIARIO</p><h1>Panel principal</h1><p>Control de propiedades, clientes, publicaciones y comisiones.</p></div>
           <span className={`status ${status}`}>
-            <span className="status">{status === "checking" ? "Verificando Supabase..." : status === "connected" ? "Conectado a Supabase" : "Error de conexión"}
+            {status === 'checking' ? 'Verificando Supabase…' : status === 'ok' ? 'Supabase conectado' : 'Falta conectar Supabase'}
           </span>
           </div>
         </header>
